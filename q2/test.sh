@@ -4,6 +4,8 @@ dcc >/dev/null 2>&1
 if [ $? -ne 1 ]
 then
   echo dcc was not found. Please do this question on the CSE computers
+  shopt -s expand_aliases
+  alias dcc=gcc
 fi
 
 res=0
